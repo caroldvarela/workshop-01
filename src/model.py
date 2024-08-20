@@ -5,17 +5,17 @@ base = declarative_base()
 
 class Candidates(base):
     __tablename__ = 'Candidates'
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    firstname = Column(String(100), nullable=False)
-    lastname = Column(String(100), nullable=False)
-    email = Column(String(100), unique=True, nullable=False)
-    applicationdate = Column(Date, nullable=False)
-    country = Column(String(100), nullable=False)
-    yoe = Column(Integer, nullable=False)  # Years of Experience
-    seniority = Column(String(100), nullable=False)
-    technology = Column(String(100), nullable=False)
-    codechallengescore = Column(Integer, nullable=False)
-    technicalinterviewscore = Column(Integer, nullable=False)
+    ID = Column(Integer, primary_key=True, autoincrement=True)
+    First_Name = Column(String(100), nullable=False)
+    Last_Name = Column(String(100), nullable=False)
+    Email = Column(String(100), nullable=False)
+    Application_Date = Column(Date, nullable=False)
+    Country = Column(String(100), nullable=False)
+    YOE = Column(Integer, nullable=False)  # Years of Experience
+    Seniority = Column(String(100), nullable=False)
+    Technology = Column(String(100), nullable=False)
+    Code_Challenge_Score = Column(Integer, nullable=False)
+    Technical_Interview_Score = Column(Integer, nullable=False)
 
     def __str__ (self):
-        return f"{self.Candidates.__table__}"
+        return f"Candidate(id={self.id}, firstname={self.firstname}, lastname={self.lastname})"
