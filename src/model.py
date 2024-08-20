@@ -16,7 +16,6 @@ class Candidates(base):
     technology = Column(String(100), nullable=False)
     codechallengescore = Column(Integer, nullable=False)
     technicalinterviewscore = Column(Integer, nullable=False)
-    hired = Column(Integer, nullable=False)  # 0 or 1
 
     def __str__ (self):
         return f"{self.Candidates.__table__}"
