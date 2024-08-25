@@ -4,6 +4,12 @@ to a PostgreSQL database using configuration values from environment variables.
 
 It defines the following function:
 - build_engine: Creates and returns a SQLAlchemy engine for the database.
+
+Usage:
+    This module is used to establish a connection to a PostgreSQL database by creating an engine
+    with SQLAlchemy. The `build_engine` function retrieves connection details from environment variables
+    and handles potential errors during the connection process.
+    
 """
 
 from decouple import config, UndefinedValueError
