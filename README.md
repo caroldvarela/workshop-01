@@ -140,3 +140,4 @@ Ensure you have the dataset and that it is already loaded into a PostgreSQL data
    - Save your Power BI file and, if desired, publish it to the Power BI service for sharing and collaboration.
 
 Congratulations! You have successfully created a dashboard in Power BI using data from a PostgreSQL database. 
+
